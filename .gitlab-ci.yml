@@ -11,5 +11,5 @@ variables:
     IMAGE_NAME: alpine-git
 
 stages:
-    - mirror
     - docker-build-and-publish
+    - mirror
