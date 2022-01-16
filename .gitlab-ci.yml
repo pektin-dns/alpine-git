@@ -2,7 +2,6 @@ include:
     - project: pektin/pektin-dist
       ref: main
       file:
-          - scripts/mirror.yml
           - scripts/docker-build-and-publish.yml
 
 image: alpine
@@ -12,4 +11,3 @@ variables:
 
 stages:
     - docker-build-and-publish
-    - mirror
